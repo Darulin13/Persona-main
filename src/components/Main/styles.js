@@ -9,29 +9,48 @@ export const Firstmain = styled.section`
   background-color: black;
   flex-direction: row;
   display: flex;
+  border: solid red;
 
   .icon {
-    width: 20%;
+    border: solid green;
+    width: 35%;
     flex-direction: column;
     display: flex;
     justify-content: space-evenly;
   }
+
   h1 {
-    color: white;
+    color: #cfb53b;
+    font-size: 40px;
+    text-align: center;
   }
   div {
-    width: 80%;
+    border: solid blue;
+    width: 65%;
   }
   img {
     width: 100%;
+  }
+  button {
+    font-size: 70px;
+    border: none;
+    background-color: black;
+    color: #cfb53b;
   }
 `;
 export const Games = styled.section`
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
-  border: solid green;
+
+  article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: solid green;
+  }
   div {
     width: 20%;
     border: solid blue;
@@ -47,6 +66,14 @@ export const Games = styled.section`
   p {
     color: white;
   }
+
+  h1 {
+    align-items: center;
+    color: white;
+    width: 10%;
+    border: double #cfb53b;
+    font-size: 30px;
+  }
 `;
 export const Trailers = styled.section`
   width: 100%;
@@ -57,11 +84,11 @@ export const Trailers = styled.section`
   h1 {
     color: white;
     border: double #cfb53b;
-    font-size: 30px;
+    font-size: 40px;
   }
+
   picture {
-    border: double #cfb53b;
-    width: 10%;
+    width: 22%;
     display: flex;
     flex-direction: row;
     align-items: start;

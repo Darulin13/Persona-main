@@ -69,27 +69,37 @@ export function Main() {
         </div>
         <div class="icon">
           <img src={logo.url} alt=" logo" />
-          <h1>{title}</h1>
+          <article>
+            <h1>Changing the world Takes the heart</h1>
+          </article>
           <button>{button}</button>
         </div>
       </S.Firstmain>
+
       <S.Games>
-        <div>
-          <img src={persona1.url} alt=" persona 1" />
-          <p>{titlepers1}</p>
-        </div>
-        <div>
-          <img src={persona2.url} alt=" persona 2" />
-          <p>{titlepers2}</p>
-        </div>
-        <div>
-          <img src={persona3.url} alt=" persona 3" />
-          <p>{titlepers3}</p>
-        </div>
-        <div>
-          <img src={persona4.url} alt=" persona 4" />
-          <p>{titlepers4}</p>
-        </div>
+        <h1>{other}</h1>
+        <article>
+          <div>
+            <img src={persona1.url} alt=" persona 1" />
+            <p>{titlepers1}</p>
+            <button>{learn}</button>
+          </div>
+          <div>
+            <img src={persona2.url} alt=" persona 2" />
+            <p>{titlepers2}</p>
+            <button>{learn}</button>
+          </div>
+          <div>
+            <img src={persona3.url} alt=" persona 3" />
+            <p>{titlepers3}</p>
+            <button>{learn}</button>
+          </div>
+          <div>
+            <img src={persona4.url} alt=" persona 4" />
+            <p>{titlepers4}</p>
+            <button>{learn}</button>
+          </div>
+        </article>
       </S.Games>
       <S.Trailers>
         <picture>
