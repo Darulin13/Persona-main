@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-
+import GlobalStyle from "./GlobalStyle";
 import { graphql, useStaticQuery } from "gatsby";
 
 export function Main() {
@@ -63,21 +63,19 @@ export function Main() {
 
   return (
     <S.Container>
-      <S.Firstmain>
+      <GlobalStyle />
+      <S.Firstmain back={background.url}>
         <div>
-          <img src={background.url} alt=" background" />
-        </div>
-        <div class="icon">
-          <img src={logo.url} alt=" logo" />
-          <article>
-            <h1>Changing the world Takes the heart</h1>
-          </article>
+          <img src={logo.url} alt=" logo " />
+          <h1>Changing the World Takes the HEart</h1>
           <button>{button}</button>
         </div>
       </S.Firstmain>
 
       <S.Games>
-        <h1>{other}</h1>
+        <picture>
+          <h1>{other}</h1>
+        </picture>
         <article>
           <div>
             <img src={persona1.url} alt=" persona 1" />
@@ -108,14 +106,14 @@ export function Main() {
 
         <div>
           <iframe
-            src="https://www.youtube.com/embed/vjSHjAoQty4"
+            src="https://www.youtube.com/embed/wTp_q76UWBo"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
           <iframe
-            src="https://www.youtube.com/embed/RP-mvJE9EQM"
+            src="https://www.youtube.com/embed/XdyH3qHq1eA"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

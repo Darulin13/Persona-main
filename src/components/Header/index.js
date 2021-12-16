@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-
+import GlobalStyle from "./GlobalStyle";
 import { graphql, useStaticQuery } from "gatsby";
 
 export function Header() {

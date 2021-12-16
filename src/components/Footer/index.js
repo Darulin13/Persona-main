@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-
+import GlobalStyle from "./GlobalStyle";
 import { graphql, useStaticQuery } from "gatsby";
 
 export function Footer() {
@@ -57,6 +57,7 @@ export function Footer() {
 
   return (
     <S.Container>
+      <GlobalStyle />
       <S.Social>
         <div>
           <img src={face.url} alt=" icon Facebook" />
